@@ -1,0 +1,28 @@
+.container .donate-content {
+  display: flex;
+  gap: 10px;
+  padding: 70px 10px 20px 30px;
+}
+.container .donate-content .cash-payment {
+  width: 60%;
+}
+.container .donate-content .payment-border {
+  border-left: thick solid #ff0000;
+}
+.container .donate-content .online-payment {
+  width: 40%;
+}
+.container .donate-content .online-payment form .form-floating input {
+  border: none;
+  border-bottom: solid 2px;
+  transition: 0.5s;
+}
+.container .donate-content .online-payment form .form-floating input:hover {
+  background-color: white;
+}
+.container .donate-content .online-payment form .form-submit {
+  text-align: center;
+}
+.container .donate-content .online-payment form .form-submit button {
+  width: 50% !important;
+}/*# sourceMappingURL=donate.css.map */

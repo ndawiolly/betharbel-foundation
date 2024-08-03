@@ -1,0 +1,299 @@
+@import "pages-styling/donate.css";
+@import "pages-styling/gallery.css";
+@import "pages-styling/project.css";
+@import "pages-styling/dashboard.css";
+
+@import "pages-styling/media";
+
+.container-fluid {
+    #about-us-cont {
+        padding: 30px;
+        display: flex !important;
+        gap: 4px;
+
+        @include tabletLg{
+            display: block !important;
+        }
+
+        .text-part-about {
+            width: 50% !important;
+            @include tabletLg{
+                width: 100% !important;
+            }
+        }
+
+        .image-part {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            width: 50%;
+            @include tabletLg{
+                grid-template-columns: repeat(4, 1fr);
+                width: 100% !important;
+                padding-top: 50px;
+            }
+            @include tablet{
+                grid-template-columns: repeat(2, 1fr);
+                
+            }
+
+            .about-quick-box {
+                padding: 50px 10px !important;
+                background-color: #FFF;
+                box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+                border-radius: 15px;
+                text-align: center;
+                margin: 10px 10px 10px 10px;
+                font-size: 20px;
+
+                &:hover {
+                    display: inline-block;
+                    margin: 0 0.5rem;
+
+                    animation: animate__zoomIn;
+                    animation-duration: 2s;
+                }
+            }
+
+            #box1 {
+                color: #ff6b70;
+
+                &:hover {
+                    background-color: #ff6b70a8;
+                    padding-top: 50px;
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+
+            #box2 {
+                color: #f7a900;
+                &:hover {
+                    background-color: #f7a9009f;
+                    padding-top: 50px;
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+
+            #box3 {
+                color: #21d7d9;
+                &:hover {
+                    background-color: #21d6d9a3;
+                    padding-top: 50px;
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+
+            #box4 {
+                color: purple;
+                &:hover {
+                    background-color: rgba(128, 0, 128, 0.497);
+                    padding-top: 50px;
+                    font-weight: bolder;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+// mission
+#mission-beth {
+    padding: 30px;
+
+    .d-mission {
+        display: flex;
+        padding-bottom: 20px;
+
+        @include tabletLg{
+            display: block !important;
+            
+        }
+        .mv-det {
+            width: 50%;
+            @include tabletLg{
+                width: 100% !important;
+                padding-bottom:50px;
+            }
+        }
+
+        .mv-img {
+            width: 50%;
+            @include tabletLg{
+                width: 100% !important;
+                display: flex;
+                justify-content: end !important;
+            }
+        }
+    }
+
+    // vision
+    .vision {
+        display: flex;
+        padding-bottom: 20px;
+        @include tabletLg{
+            display: block;
+            // padding-top:50px;
+        }
+
+        .mv-img {
+            width: 50%;
+            @include tabletLg{
+                width: 100% !important;
+                padding-bottom:50px;
+                padding-top: 0 !important;
+            }
+        }
+
+        .mv-det {
+            width: 50%;
+            padding: 10px;
+            @include tabletLg{
+                width: 100% !important;
+                padding: 20px !important;
+                size: 30px;
+            }
+        }
+    }
+}
+
+// events
+.events {
+    .container {
+        .session-title {
+            padding-top: 50px;
+        }
+
+        .event-ro {
+            .col-md-4 {
+                @include tablet{
+                    padding-bottom: 20px;
+                }
+                padding-bottom: 20px;
+                .event-box {
+                    text-align: center !important;
+
+                    h4 {
+                        padding-top: 20px !important;
+                    }
+                    
+
+                    .desic {
+                        padding-bottom: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// footer
+footer {
+    padding-top: 60px;
+    color: white;
+
+    .container-fluid {
+        padding: 40px;
+        background-color: black;
+
+        .footer-icon {
+            display: flex;
+            justify-content: space-around;
+           
+
+            .footer-socials {
+                display: flex;
+                gap: 20px;
+
+                a {
+                    i {
+                        font-size: 30px;
+                        color: white;
+
+                    }
+                }
+            }
+        }
+
+        .footer-content {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            @include tablet{
+                display: block;
+            }
+            
+            .foot-cont {
+                width: 50%;
+                @include tablet{
+                    padding-bottom: 10px !important;
+                    width: 100%;
+                }
+                h2 {
+                    color: rgb(159, 156, 156);
+                }
+
+                p {
+                    font-size: small;
+                }
+            }
+
+            .footer-contact {
+                @include tablet{
+                    padding-top: 40px;
+                    border-top: solid #f7a900;
+                }
+                h2 {
+                    color: rgb(159, 156, 156);
+                    width: 50%;
+                    
+                }
+
+                address {
+                    font-size: small;
+                }
+            }
+        }
+
+    }
+}
+
+
+.contact-rooo{
+    @include tablet{
+        padding: 10px;
+    }
+    .container{
+        @include tablet{
+            border: solid green;
+            padding: 10px;
+        }
+        .row{
+            .col-sm-7{
+                padding: 20px;
+                @include tabletLg{
+                    padding: 10px;
+                    
+                }
+                .row{
+                    .col-sm-8{
+                        a{
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+            .col-sm-5{
+               
+                @include tablet{
+                    display: none !important;
+                    
+                }
+            }
+        }
+    }
+}
